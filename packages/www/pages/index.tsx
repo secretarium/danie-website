@@ -30,7 +30,6 @@ import semPointC from '../public/assets/images/semPointC.svg';
 import daPointA from '../public/assets/images/daPointA.svg';
 import daPointB from '../public/assets/images/daPointB.svg';
 import daPointC from '../public/assets/images/daPointC.svg';
-import Link from 'next/link';
 
 const Index: React.FC = () => {
 
@@ -157,7 +156,7 @@ const Index: React.FC = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="pb-32">
+                            <div className="relative pb-32 z-10">
                                 <img alt="Logo Datalign" src={logoDatalign} className="pb-5" style={{
                                     height: '5rem'
                                 }} />

@@ -1,7 +1,6 @@
 import React from 'react';
 import Layout from '../components/layout';
 import Head from 'next/head';
-import PostTitle from '../components/post-title';
 import Container from '../components/container';
 
 const Legal: React.FC = () => {
@@ -11,8 +10,8 @@ const Legal: React.FC = () => {
                 <title>DANIE Privacy Notice</title>
             </Head>
             <Container>
-                <section id="legal" className="mb-20 px-8">
-                    <PostTitle>Privacy Policy</PostTitle>
+                <section id="legal" className="py-20 ">
+                    <h1 className="text-dark-blue text-5xl pb-5">Privacy Policy</h1>
                     <p className="text-lg leading-9 pb-10">
                         Your privacy is literally our main concern, so here is everything you need to know about the way your personal information is collected and used when you interact with the DANIE website.
                     </p>
