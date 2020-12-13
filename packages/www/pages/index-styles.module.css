@@ -1,0 +1,14 @@
+@screen md {
+    .listTick li {
+        width: 130%;
+    }
+}
+
+.listTick li::before {
+    content: ".......";
+    color: transparent;
+    background-image: url(../public/assets/images/listTick.svg);
+    background-repeat: no-repeat;
+    background-position: 0 4px;
+    background-size: 1rem;
+}
