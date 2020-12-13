@@ -1,0 +1,64 @@
+@tailwind base;
+
+/* Write your own custom base styles here */
+
+/* Start purging... */
+@tailwind components;
+/* Stop purging. */
+
+/* Write you own custom component styles here */
+
+/* Start purging... */
+@tailwind utilities;
+/* Stop purging. */
+
+/* Root styles */
+
+@font-face {
+  font-family: Comfortaa;
+  src: url('../public/assets/webfonts/ComfortaaRegular.eot'); /* IE9 Compat Modes */
+  src: url('../public/assets/webfonts/ComfortaaRegular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../public/assets/webfonts/ComfortaaRegular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../public/assets/webfonts/ComfortaaRegular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../public/assets/webfonts/ComfortaaRegular.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+img {
+    margin: auto;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+h1, h2 {
+    font-family: 'Comfortaa'
+}
+
+/* Page progress bar */
+@import '~nprogress/nprogress.css';
+
+#nprogress .bar {
+    background: #1ca8e1;
+}
+
+#nprogress .peg {
+    box-shadow: 0 0 10px #1ca8e1, 0 0 5px #1ca8e1;
+}
+
+#nprogress .spinner {
+    top: 3rem;
+}
+
+#nprogress .spinner-icon {
+
+    border-top-color: #1ca8e1;
+    border-left-color: #1ca8e1;
+}
+
+@media (max-width: 30rem) {
+
+    #nprogress .spinner {
+        visibility: hidden;
+    }
+}
