@@ -2,6 +2,7 @@ import React from 'react';
 import Layout from '../components/layout';
 import Container from '../components/container';
 import Head from 'next/head';
+import style from './index-styles.module.css';
 
 import bannerImage from '../public/assets/images/bannerImage.png';
 import backdropLogo from '../public/assets/images/backdropLogo.svg';
@@ -11,12 +12,16 @@ import logoElement22 from '../public/assets/images/logoElement22.svg';
 
 import optQuality from '../public/assets/images/optQuality.svg';
 import optUndisclosed from '../public/assets/images/optUndisclosed.svg';
+import optUniq from '../public/assets/images/optUniq.png';
 
 import productSemaphore from '../public/assets/images/productSemaphore.png';
 import productDatalign from '../public/assets/images/productDatalign.png';
 
 import logoSemaphore from '../public/assets/images/logoSemaphore.svg';
 import logoDatalign from '../public/assets/images/logoDatalign.svg';
+
+import storyA from '../public/assets/images/3rd/storyA.png';
+import storyB from '../public/assets/images/3rd/storyB.png';
 
 import semPointA from '../public/assets/images/semPointA.svg';
 import semPointB from '../public/assets/images/semPointB.svg';
@@ -74,7 +79,7 @@ const Index: React.FC = () => {
                                 <a rel="noreferrer" target="_blank" className="w-full md:w-1/2 relative overflow-hidden" href="https://a-teaminsight.com/danie-consortium-uses-game-changing-privacy-enhancing-technology-to-improve-client-reference-data-quality/" style={{
                                     height: '12rem'
                                 }} >
-                                    <img alt="" src="https://a-teaminsight.com/app/uploads/2020/12/Game-Changing.png" className="w-full object-cover" />
+                                    <img alt="" src={storyA} className="w-full h-full object-cover" />
                                     <div className="absolute bottom-0 bg-opacity-75 bg-white w-full py-5">
                                         <span>20 august 2019 | Design</span><br />
                                         <span><b>Future of customer support</b></span>
@@ -83,7 +88,7 @@ const Index: React.FC = () => {
                                 <a rel="noreferrer" target="_blank" className="w-full md:w-1/2 relative overflow-hidden" href="https://www.spglobal.com/marketintelligence/en/news-insights/latest-news-headlines/banks-use-privacy-enhancing-tech-to-tackle-money-laundering-as-regulation-lags-61074568" style={{
                                     height: '12rem'
                                 }} >
-                                    <img alt="" src="https://a-teaminsight.com/app/uploads/2020/12/Game-Changing.png" className="w-full object-cover" />
+                                    <img alt="" src={storyB} className="w-full h-full object-cover" />
                                     <div className="absolute bottom-0 bg-opacity-75 bg-white w-full py-5">
                                         <span>18 august 2019 | Tech</span><br />
                                         <span><b>Digital trends in next 2020</b></span>
@@ -186,20 +191,23 @@ const Index: React.FC = () => {
                         <img alt="" src={backdropLogo} className="absolute z-0" style={{
                             left: '-50%'
                         }} />
-                        <div className="relative z-10 flex flex-wrap md:flex-no-wrap px-12">
+                        <div className="relative z-10 flex flex-wrap md:flex-no-wrap gap-10 px-12">
                             <div className="w-full md:w-1/2 lg:w-1/3" >
                                 <h2 className="text-dark-blue font-bold text-2xl pb-5">What makes DANIE unique?</h2>
-                                <p className="">
+                                <p className="pb-10">
                                     Until now, financial institutions struggled to share data insights
                                     due to privacy concerns. The DANIE product suite provides
                                     decentralised solutions that have been built for collaboration.
                                 </p>
-                                <ul>
-                                    <li>Each party has control of their own data</li>
-                                    <li>No ties to the other participants</li>
-                                    <li>Easy to use, no IT skills required</li>
-                                    <li>Processes more than 2,000 records per second</li>
+                                <ul className={`list-none ${style.listTick}`}>
+                                    <li className="pb-5 md:pb-0">Each party has control of their own data</li>
+                                    <li className="pb-5 md:pb-0">No ties to the other participants</li>
+                                    <li className="pb-5 md:pb-0">Easy to use, no IT skills required</li>
+                                    <li className="pb-5 md:pb-0">Processes more than 2,000 records per second</li>
                                 </ul>
+                            </div>
+                            <div className="w-full md:w-1/2 lg:w-2/3 align-middle" >
+                                <img alt="" src={optUniq} className="pb-3 ml-5 md:-mr-10" />
                             </div>
                         </div>
                     </Container>
