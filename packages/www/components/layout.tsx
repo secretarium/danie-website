@@ -68,7 +68,7 @@ const Layout: React.FC<LayoutProps> = ({ preview, children }) => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
-                className="min-h-screen">
+                className="min-h-screen overflow-hidden">
                 <Alert preview={preview} />
                 <main>{children}</main>
             </motion.div>

@@ -41,7 +41,7 @@ const Index: React.FC = () => {
             <Layout>
                 <section className="text-center bg-light-blue pt-20 pb-20 md:pb-48 lg:pb-40">
                     <Container>
-                        <div className="px-12">
+                        <div className="px-5 md:px-12">
                             <h1 className="text-dark-blue text-5xl pb-5">DANIE</h1>
                             <p className="text-medium-blue font-bold text-xl">
                                 A community of financial institutions harnessing the
@@ -58,7 +58,7 @@ const Index: React.FC = () => {
                         }} />
                         <div className="relative z-10">
                             <img alt="" src={bannerImage} className="mb-10 md:-mt-40" />
-                            <div className="px-12 z-10">
+                            <div className="px-5 md:px-12 z-10">
                                 <h2 className="text-dark-blue font-bold text-2xl pb-5">Provably confidential collaboration with peers</h2>
                                 <p className="">
                                     DANIE provides next generation benchmarking for ultra-sensitive data reconciliation,
@@ -72,7 +72,7 @@ const Index: React.FC = () => {
                 </section>
                 <section className="text-center bg-light-blue py-20">
                     <Container>
-                        <div className="px-12">
+                        <div className="px-5 md:px-12">
                             <h2 className="text-dark-blue font-bold text-2xl pb-5">Trusted by banks</h2>
                             <div className="flex flex-wrap gap-10 md:flex-no-wrap">
                                 <a rel="noreferrer" target="_blank" className="w-full md:w-1/2 relative overflow-hidden" href="https://a-teaminsight.com/danie-consortium-uses-game-changing-privacy-enhancing-technology-to-improve-client-reference-data-quality/" style={{
@@ -99,7 +99,7 @@ const Index: React.FC = () => {
                 </section>
                 <section className="text-center py-20">
                     <Container>
-                        <div className="px-12 py-10">
+                        <div className="px-5 md:px-12 py-10">
                             <img alt="" src={optQuality} className="pb-10" style={{
                                 height: '8rem'
                             }} />
@@ -110,7 +110,7 @@ const Index: React.FC = () => {
                                 and anonymity.
                             </p>
                         </div>
-                        <div className="px-12 py-10">
+                        <div className="px-5 md:px-12 py-10">
                             <img alt="" src={optUndisclosed} className="pb-10" style={{
                                 height: '8rem'
                             }} />
@@ -190,7 +190,7 @@ const Index: React.FC = () => {
                         <img alt="" src={backdropLogo} className="absolute z-0" style={{
                             left: '-50%'
                         }} />
-                        <div className="relative z-10 flex flex-wrap md:flex-no-wrap gap-10 px-12">
+                        <div className="relative z-10 flex flex-wrap md:flex-no-wrap gap-10 px-5 md:px-12">
                             <div className="w-full md:w-1/2 lg:w-1/3" >
                                 <h2 className="text-dark-blue font-bold text-2xl pb-5">What makes DANIE unique?</h2>
                                 <p className="pb-10">
@@ -213,7 +213,7 @@ const Index: React.FC = () => {
                 </section>
                 <section className="text-center bg-light-blue py-20">
                     <Container>
-                        <div className="px-12">
+                        <div className="px-5 md:px-12">
                             <h2 className="text-dark-blue font-bold text-2xl pb-5">The only tested technology proven to maintain complete privacyfor data collaboration</h2>
                             <p className="">
                                 DANIE data collaboration products have been used by some of the largest banks in the
@@ -225,7 +225,7 @@ const Index: React.FC = () => {
                 </section>
                 <section className="text-center py-20">
                     <Container>
-                        <div className="px-12">
+                        <div className="px-5 md:px-12">
                             <h2 className="text-dark-blue font-bold text-2xl pb-5">Who’s behind DANIE?</h2>
                             <div className="flex flex-wrap md:flex-no-wrap gap-10">
                                 <div className="w-full md:w-1/2">
@@ -252,7 +252,7 @@ const Index: React.FC = () => {
                 </section>
                 <section className="text-center bg-light-blue py-20">
                     <Container>
-                        <div className="px-12">
+                        <div className="px-5 md:px-12">
                             <h2 className="text-medium-blue font-bold text-2xl pb-5">Partner enquiries</h2>
                             <p className="">
                                 If you’re interested in finding out more about the community, our technology, or how

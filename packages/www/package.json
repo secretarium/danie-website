@@ -5,6 +5,7 @@
     "scripts": {
         "dev": "next -p 3064",
         "build": "next build",
+        "export": "next export",
         "start": "next start",
         "typecheck": "tsc"
     },
