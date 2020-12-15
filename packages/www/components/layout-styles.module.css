@@ -21,6 +21,10 @@
 @media (max-width: 30rem) {
 
     .stickyPanel > div {
-        height: 8rem;
+        height: 7rem;
+    }
+
+    .stickyPanel .stuck {
+        height: 5rem;
     }
 }

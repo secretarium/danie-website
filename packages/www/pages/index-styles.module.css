@@ -1,9 +1,3 @@
-@screen md {
-    .listTick li {
-        width: 130%;
-    }
-}
-
 .listTick li::before {
     content: ".......";
     color: transparent;
@@ -11,4 +5,18 @@
     background-repeat: no-repeat;
     background-position: 0 4px;
     background-size: 1rem;
+}
+
+.semImage {
+    height: 4rem;
+}
+
+@screen md {
+    .listTick li {
+        width: 130%;
+    }
+
+    .semImage {
+        height: 6rem;
+    }
 }

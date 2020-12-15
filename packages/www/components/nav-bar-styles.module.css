@@ -23,13 +23,9 @@
     font-family: 'Comfortaa';
 }
 
-.fixedToggle .navBar {
-    line-height: 7rem;
-}
-
 .fixedToggle .navBar img {
     height: 4.5rem;
-}
+} 
 
 .logoWrapper {
     overflow: hidden;
@@ -104,7 +100,11 @@
         line-height: 5.5rem;
     }
 
-    .navBar img, .fixedToggle .navBar img {
+    .navBar img {
+        height: 2.5rem;
+    }
+
+    .fixedToggle .navBar img {
         height: 3rem;
     }
 }
