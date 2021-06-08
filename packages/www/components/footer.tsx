@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
             <div>
                 <Container>
                     <div className="w-full text-center text-m py-8 text-white">
-                        Secretarium © 2020 All Rights Reserved<br />
+                        Secretarium © {new Date().getFullYear()} All Rights Reserved<br />
                         <Link href="/legal"><a className="text-light-blue text-xs">Privacy policy</a></Link>
                     </div>
                 </Container>

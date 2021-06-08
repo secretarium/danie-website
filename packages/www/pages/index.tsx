@@ -4,6 +4,7 @@ import Container from '../components/container';
 import Head from 'next/head';
 import style from './index-styles.module.css';
 
+import DANIELogo from '../public/assets/images/DANIELogo.svg';
 import bannerImage from '../public/assets/images/bannerImage.png';
 import backdropLogo from '../public/assets/images/backdropLogo.svg';
 
@@ -30,6 +31,7 @@ import semPointC from '../public/assets/images/semPointC.svg';
 import daPointA from '../public/assets/images/daPointA.svg';
 import daPointB from '../public/assets/images/daPointB.svg';
 import daPointC from '../public/assets/images/daPointC.svg';
+import Link from 'next/link';
 
 const Index: React.FC = () => {
 
@@ -42,12 +44,22 @@ const Index: React.FC = () => {
                 <section className="text-center bg-light-blue pt-10 md:pt-20 pb-10 md:pb-48 lg:pb-40">
                     <Container>
                         <div className="px-5 md:px-12">
+                            <Link href="/" >
+                                <a href="/" className={'sm:pl-2 z-10 inline-block w-32 h-32 mb-10'}>
+                                    <img src={DANIELogo} alt="Secretarium" className="inline-block z-10" />
+                                </a>
+                            </Link>
                             <h1 className="text-dark-blue text-3xl md:text-5xl pb-5">DANIE</h1>
                             <p className="text-medium-blue font-bold text-lg md:text-xl">
-                                A community of financial institutions harnessing the
-                                latest privacy enhancing technology to collaborate
-                                and share insights securely.
+                                A community of financial institutions harnessing the latest privacy enhancing technology to collaborate and share insights securely.
                             </p>
+                            <br />
+                            <br />
+                            <Link href="/app">
+                                <a href="/app" className={'z-10 rounded text-white text-center bg-blue-800 py-2 px-6'}>
+                                    Log in
+                                </a>
+                            </Link>
                         </div>
                     </Container>
                 </section>
@@ -80,8 +92,8 @@ const Index: React.FC = () => {
                                 }} >
                                     <img alt="" src={storyA} className="w-full h-full object-cover" />
                                     <div className="absolute bottom-0 bg-opacity-75 bg-white w-full py-5 text-sm md:text-base">
-                                        <span>20 august 2019 | Design</span><br />
-                                        <span><b>Future of customer support</b></span>
+                                        <span>2 December 2020 | Tech</span><br />
+                                        <span><b>Improving Client Reference Data Quality</b></span>
                                     </div>
                                 </a>
                                 <a rel="noreferrer" target="_blank" className="w-full md:w-1/2 relative overflow-hidden" href="https://www.spglobal.com/marketintelligence/en/news-insights/latest-news-headlines/banks-use-privacy-enhancing-tech-to-tackle-money-laundering-as-regulation-lags-61074568" style={{
@@ -89,8 +101,8 @@ const Index: React.FC = () => {
                                 }} >
                                     <img alt="" src={storyB} className="w-full h-full object-cover" />
                                     <div className="absolute bottom-0 bg-opacity-75 bg-white w-full py-5 text-sm md:text-base">
-                                        <span>18 august 2019 | Tech</span><br />
-                                        <span><b>Digital trends in next 2020</b></span>
+                                        <span>1 December 2020 | Tech</span><br />
+                                        <span><b>Privacy Tech Tackles Money Laundering</b></span>
                                     </div>
                                 </a>
                             </div>
@@ -135,7 +147,7 @@ const Index: React.FC = () => {
                                     height: '4.5rem'
                                 }} />
                                 <img alt="Screenshots Semaphore" src={productSemaphore} className="py-10" />
-                                <div className="flex flex-wrap md:flex-no-wrap gap-5 md:px-20">
+                                <div className="flex flex-wrap md:flex-no-wrap gap-5 md:px-10">
                                     <div className="w-full md:w-1/3">
                                         <img alt="" src={semPointA} className={`pb-3 ${style.semImage}`} />
                                         <span><b>KYC and AML</b> data collaboration</span>
@@ -150,12 +162,12 @@ const Index: React.FC = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="relative z-10">
+                            <div className="relative pb-20 md:pb-32 z-10">
                                 <img alt="Logo Datalign" src={logoDatalign} className="pb-5" style={{
                                     height: '5rem'
                                 }} />
                                 <img alt="Screenshots Datalign" src={productDatalign} className="py-10" />
-                                <div className="flex flex-wrap md:flex-no-wrap gap-5 md:px-40">
+                                <div className="flex flex-wrap md:flex-no-wrap gap-5 md:px-10">
                                     <div className="w-full md:w-1/3">
                                         <img alt="" src={daPointA} className={`pb-3 ${style.semImage}`} />
                                         <span>Currently compares <b>24 client reference data attributes</b></span>
@@ -202,7 +214,7 @@ const Index: React.FC = () => {
                 <section className="text-center bg-light-blue py-10 md:py-20">
                     <Container>
                         <div className="px-5 md:px-12">
-                            <h2 className="text-dark-blue font-bold text-xl md:text-2xl pb-5">The only tested technology proven to maintain complete privacyfor data collaboration</h2>
+                            <h2 className="text-dark-blue font-bold text-xl md:text-2xl pb-5">The only tested technology proven to maintain complete privacy for data collaboration</h2>
                             <p className="text-sm md:text-base">
                                 DANIE data collaboration products have been used by some of the largest banks in the
                                 world and, since 2018, have been trialled successfully to reconcile millions of records
