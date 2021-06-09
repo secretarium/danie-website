@@ -3,7 +3,7 @@
     color: transparent;
     background-image: url(../public/assets/images/listTick.svg);
     background-repeat: no-repeat;
-    background-position: 0 4px;
+    background-position: 0 3px;
     background-size: 1rem;
 }
 
@@ -15,7 +15,6 @@
     .listTick li {
         width: 130%;
     }
-
     .semImage {
         height: 6rem;
     }

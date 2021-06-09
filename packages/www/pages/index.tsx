@@ -199,23 +199,22 @@ const Index: React.FC = () => {
                         <img alt="" src={backdropLogo} className="absolute z-0" style={{
                             left: '-50%'
                         }} />
+                        <h2 className="text-dark-blue font-bold text-xl md:text-2xl pb-5 px-5 md:px-12">What makes DANIE unique?</h2>
                         <div className="relative z-10 flex flex-wrap md:flex-no-wrap gap-10 px-5 md:px-12">
-                            <div className="w-full md:w-1/2 lg:w-1/3" >
-                                <h2 className="text-dark-blue font-bold text-xl md:text-2xl pb-5">What makes DANIE unique?</h2>
+                            <div className="w-1/2" >
                                 <p className="pb-10 text-sm md:text-base">
                                     Until now, financial institutions struggled to share data insights
                                     due to privacy concerns. The DANIE product suite provides
                                     decentralised solutions that have been built for collaboration.
                                 </p>
-                                <ul className={`list-none ${style.listTick} text-sm md:text-base`}>
-                                    <li className="pb-5 md:pb-0">Each party has control of their own data</li>
-                                    <li className="pb-5 md:pb-0">No ties to the other participants</li>
-                                    <li className="pb-5 md:pb-0">Easy to use, no IT skills required</li>
-                                    <li className="pb-5 md:pb-0">Processes more than 2,000 records per second</li>
-                                </ul>
                             </div>
-                            <div className="w-full md:w-1/2 lg:w-2/3 align-middle" >
-                                <img alt="" src={optUniq} className="pb-3 ml-5 md:-mr-10" />
+                            <div className="w-1/2" >
+                                <ul className={`list-none ${style.listTick} text-sm md:text-base`}>
+                                    <li className="pb-6 md:pb-1">Each party has control of their own data</li>
+                                    <li className="pb-6 md:pb-1">No ties to the other participants</li>
+                                    <li className="pb-6 md:pb-1">Easy to use, no IT skills required</li>
+                                    <li className="pb-6 md:pb-1">Processes more than 2,000 records per second</li>
+                                </ul>
                             </div>
                         </div>
                     </Container>
