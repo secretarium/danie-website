@@ -96,20 +96,20 @@ const Index: React.FC = () => {
                         <div className="px-5 md:px-12">
                             <h2 className="text-dark-blue font-bold text-xl md:text-2xl pb-5">Trusted by banks</h2>
                             <div className="flex flex-wrap gap-10 md:flex-no-wrap">
-                                <a rel="noreferrer" target="_blank" className="w-full md:w-1/2 relative overflow-hidden" href="https://a-teaminsight.com/danie-consortium-uses-game-changing-privacy-enhancing-technology-to-improve-client-reference-data-quality/" style={{
-                                    height: '12rem'
-                                }} >
-                                    <img alt="" src={storyA} className="w-full h-full object-cover" />
-                                    <div className="absolute bottom-0 bg-opacity-75 bg-white w-full py-5 text-sm md:text-base">
+                                <a rel="noreferrer" target="_blank" className="w-full md:w-1/2 relative overflow-hidden" href="https://a-teaminsight.com/danie-consortium-uses-game-changing-privacy-enhancing-technology-to-improve-client-reference-data-quality/" >
+                                    <img alt="" src={storyA} className="w-full object-cover" style={{
+                                        height: '10rem'
+                                    }} />
+                                    <div className="bg-opacity-75 bg-center bg-white w-full py-5 text-sm md:text-base">
                                         <span>2 December 2020 | Tech</span><br />
                                         <span><b>Improving Client Reference Data Quality</b></span>
                                     </div>
                                 </a>
-                                <a rel="noreferrer" target="_blank" className="w-full md:w-1/2 relative overflow-hidden" href="https://www.spglobal.com/marketintelligence/en/news-insights/latest-news-headlines/banks-use-privacy-enhancing-tech-to-tackle-money-laundering-as-regulation-lags-61074568" style={{
-                                    height: '12rem'
-                                }} >
-                                    <img alt="" src={storyB} className="w-full h-full object-cover" />
-                                    <div className="absolute bottom-0 bg-opacity-75 bg-white w-full py-5 text-sm md:text-base">
+                                <a rel="noreferrer" target="_blank" className="w-full md:w-1/2 relative overflow-hidden" href="https://www.spglobal.com/marketintelligence/en/news-insights/latest-news-headlines/banks-use-privacy-enhancing-tech-to-tackle-money-laundering-as-regulation-lags-61074568" >
+                                    <img alt="" src={storyB} className="w-full object-cover" style={{
+                                        height: '10rem'
+                                    }} />
+                                    <div className="bg-opacity-75 bg-center bg-white w-full py-5 text-sm md:text-base">
                                         <span>1 December 2020 | Tech</span><br />
                                         <span><b>Privacy Tech Tackles Money Laundering</b></span>
                                     </div>
