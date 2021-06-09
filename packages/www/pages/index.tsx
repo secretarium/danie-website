@@ -5,6 +5,7 @@ import Head from 'next/head';
 import style from './index-styles.module.css';
 
 import DANIELogo from '../public/assets/images/DANIELogo.svg';
+import AwardLogo from '../public/assets/images/AwardLogo.svg';
 import bannerImage from '../public/assets/images/bannerImage.png';
 import backdropLogo from '../public/assets/images/backdropLogo.svg';
 
@@ -41,25 +42,33 @@ const Index: React.FC = () => {
                 <title>DANIE</title>
             </Head>
             <Layout>
-                <section className="text-center bg-light-blue pt-10 md:pt-20 pb-10 md:pb-48 lg:pb-40">
+                <section className="text-white bg-dark-blue py-32 md:py-64 px-10">
                     <Container>
-                        <div className="px-5 md:px-12">
-                            <Link href="/" >
-                                <a href="/" className={'sm:pl-2 z-10 inline-block w-32 h-32 mb-10'}>
-                                    <img src={DANIELogo} alt="Secretarium" className="inline-block z-10" />
-                                </a>
-                            </Link>
-                            <h1 className="text-dark-blue text-3xl md:text-5xl pb-5">DANIE</h1>
-                            <p className="text-medium-blue font-bold text-lg md:text-xl">
-                                A community of financial institutions harnessing the latest privacy enhancing technology to collaborate and share insights securely.
-                            </p>
-                            <br />
-                            <br />
-                            <Link href="/app">
-                                <a href="/app" className={'z-10 rounded text-white text-center bg-blue-800 py-2 px-6'}>
-                                    Log in
-                                </a>
-                            </Link>
+                        <div className="md:px-12">
+                            <h1 className="text-2xl md:text-3xl pb-5">DANIE</h1>
+                            <div className="flex  flex-wrap md:flex-no-wrap md:pr-40 pb-12">
+                                <div className="flex-auto text-lg md:pr-24">
+                                    A community of financial institutions harnessing the latest privacy enhancing technology to collaborate and share insights securely.
+                                </div>
+                                <div className="flex-none pt-12 md:pt-3">
+                                    <Link href="/app">
+                                        <a href="/app" className={'z-10 rounded-full text-dark-blue font-bold text-center bg-white py-2 px-6'}>
+                                            Connect
+                                        </a>
+                                    </Link>
+                                </div>
+                            </div>
+                            <div className="flex flex-wrap md:flex-no-wrap gap-0 md:gap-10 lg:gap-20">
+                                <div className="flex-auto lg:pr-20 text-left mb-10 md:mb-0">
+                                    <img src={AwardLogo} alt="Award" className="md:max-w-xs lg:max-w-sm md:inline" />
+                                </div>
+                                <div className="flex-auto md:relative w-full md:w-2/5 text-blue-100 text-sm border-l-4 border-blue-500 pl-4 mb-10 md:mb-0">
+                                    <span className="md:absolute bottom-0">Most innovative financial data security solution</span>
+                                </div>
+                                <div className="flex-auto md:relative w-full md:w-2/5 text-blue-100 text-sm border-l-4 border-blue-500 pl-4">
+                                    <span className="md:absolute bottom-0">Most innovative use of distributed ledger technology/blockchain</span>
+                                </div>
+                            </div>
                         </div>
                     </Container>
                 </section>
@@ -69,7 +78,7 @@ const Index: React.FC = () => {
                             left: '-50%'
                         }} />
                         <div className="relative z-10">
-                            <img alt="" src={bannerImage} className="mb-10 md:-mt-32 md:w-2/3" />
+                            <img alt="" src={bannerImage} className="mb-10 md:-mt-20 md:w-2/3" />
                             <div className="px-5 md:px-12 z-10">
                                 <h2 className="text-dark-blue font-bold text-xl md:text-2xl pb-5">Provably confidential collaboration with peers</h2>
                                 <p className="text-sm md:text-base">
